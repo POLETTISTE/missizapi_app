@@ -1,7 +1,9 @@
+import "./style.scss";
+
 import React from "react";
 
 const Contact = () => {
-  return <div>bonjour Contact</div>;
+  return <div id="contact">bonjour Contact</div>;
 };
 
 export default Contact;
