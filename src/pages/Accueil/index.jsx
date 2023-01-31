@@ -1,7 +1,8 @@
+import "./style.scss";
 import React from "react";
 
 const Accueil = () => {
-  return <div>bonjour accueil</div>;
+  return <div id="accueil">bonjour accueil</div>;
 };
 
 export default Accueil;

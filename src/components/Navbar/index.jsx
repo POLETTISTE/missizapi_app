@@ -1,12 +1,11 @@
+import "./style.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbar-logo">
-        <img src="" alt="" />
-      </div>
+    <div id="navbar">
+      <div className="navbar-logo"></div>
       <div className="navbar-items">
         <NavLink to="/accueil" className="nav-items-item">
           ACCUEIL
