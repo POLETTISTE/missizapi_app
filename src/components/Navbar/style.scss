@@ -1,29 +1,53 @@
 #navbar {
+  background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
 .navbar-logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: url("../../assets/images/logo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 300px;
+  width: 400px;
   height: 100%;
-}
-.navbarbar-logo-img {
-  width: 250px;
-  height: 100%;
+  &-img {
+    max-width: 250px;
+    width: 250px;
+    // max-height: 200px;
+    height: 100%;
+  }
 }
 
 .navbar-items {
+  z-index: 2;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  &-item {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover,
+    &.active {
+      // text-decoration: underline;
+      border-bottom: 4px solid black;
+    }
+  }
 }
